@@ -41,6 +41,6 @@ app.use(function (err: any, req: any, res: any, next: any) {
   responseError(res, err)
 })
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log(chalk.greenBright(`API listening on port ${process.env.PORT}!`))
 })
